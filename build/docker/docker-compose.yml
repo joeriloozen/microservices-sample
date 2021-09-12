@@ -9,9 +9,9 @@ services:
     hostname: "api-gateway"
     build: ../../api-gateway/target
     ports:
-      - "8080:8080"
+      - "28080:8080"
     expose:
-      - "8080" 
+      - "28080"
     depends_on:
       - consul
       - logstash
@@ -112,7 +112,7 @@ services:
     volumes:
       - ./dist:/usr/share/nginx/html
     ports:
-      - "80:4200"
+      - "20080:4200"
 
     networks:
       - frontend
