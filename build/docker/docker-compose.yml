@@ -9,7 +9,7 @@ services:
     hostname: "api-gateway"
     build: ../../api-gateway/target
     ports:
-      - "28080:8080"
+      - "28080:28080"
     expose:
       - "28080"
     depends_on:
